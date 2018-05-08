@@ -3,30 +3,31 @@
  * max(numbers) should return the largest number in the array, 
  * while min(numbers) should return the smallest
  */
+'use strict';
 
- function max(numbers) {
-    let currentNum = numbers[0];
-    let i = 0;
-    while (i < numbers.length) {
-        if (numbers[i] > currentNum) {
-            currentNum = numbers[i];
-         }
-         i++;
+function max(numbers) {
+  let currentNum = numbers[0];
+  let i = 0;
+  while (i < numbers.length) {
+    if (numbers[i] > currentNum) {
+      currentNum = numbers[i];
     }
-    return currentNum;
- }
+    i++;
+  }
+  return currentNum;
+}
 
- function min(numbers) {
-    let currentNum = numbers[0];
-    let i = 0;
-    while (i < numbers.length) {
-        if (numbers[i] < currentNum) {
-            currentNum = numbers[i];
-         }
-          i++;
+function min(numbers) {
+  let currentNum = numbers[0];
+  let i = 0;
+  while (i < numbers.length) {
+    if (numbers[i] < currentNum) {
+      currentNum = numbers[i];
     }
-    return currentNum;
- }
+    i++;
+  }
+  return currentNum;
+}
 
 console.log(`Max: ${max([1,5,3,4022,1,19,44,222])}`);
 console.log(`Min: ${min([5,3,4022,1,19,44,222])}`);

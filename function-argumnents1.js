@@ -10,8 +10,9 @@ goodbye should log the string 'Goodbye world'
 Use your repeat function to call the hello function five times: repeat(hello, 5)
 Use your repeat function to call the goodbye function five times: repeat(goodbye, 5)
  */
+'use strict';
 
- function repeat(fn, n) {
+function repeat(fn, n) {
     for (let i=0; i<n; i++) {
         fn(); 
     }

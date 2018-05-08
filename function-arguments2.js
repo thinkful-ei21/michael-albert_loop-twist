@@ -5,8 +5,8 @@
 const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
 
 const filteredNames = filter(myNames, function(name) {
-    // This is a "predicate function" - it's a function that only returns a boolean
-    return name[0] === 'R';
+  // This is a "predicate function" - it's a function that only returns a boolean
+  return name[0] === 'R';
 });
 
 console.log(filteredNames) // => ['Rich', 'Ray']
@@ -26,22 +26,22 @@ Finally, outside the loop, we return newArray
 Try calling your filter function using the myNames array above and test that it works
  */
 
- function filter(arr, fn) {
-     let newArray = [];
+function filter(arr, fn) {
+  let newArray = [];
 
-     for(let i = 0; i < arr.length; i++) {
-         if(fn(arr[i])) {
-             newArray.push(arr[i]);
-         } 
-     }
+  for(let i = 0; i < arr.length; i++) {
+    if(fn(arr[i])) {
+      newArray.push(arr[i]);
+    } 
+  }
 
-     return newArray;
- }
+  return newArray;
+}
 
- function checkForR(word) {
-     if(word[0] === 'r' || word[0] === 'R') {
-         return true;
-        }
- }
+function checkForR(word) {
+  if(word[0] === 'r' || word[0] === 'R') {
+    return true;
+  }
+}
 
- console.log(filter(myNames, checkForR));
+console.log(filter(myNames, checkForR));
