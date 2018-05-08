@@ -23,10 +23,11 @@
         if (numbers[i] < currentNum) {
             currentNum = numbers[i];
          }
-         i++;
+          i++;
     }
     return currentNum;
  }
 
 console.log(`Max: ${max([1,5,3,4022,1,19,44,222])}`);
 console.log(`Min: ${min([5,3,4022,1,19,44,222])}`);
+
